@@ -9,7 +9,7 @@ public class BaseballCoach implements Coach{
 	public BaseballCoach(FortuneService theFortuneService) {
 		fortuneService = theFortuneService;
 	}
-	
+	//
 	@Override
 	public String getDailyWorkout() {
 		return "Spend 30 min on batting practice";
