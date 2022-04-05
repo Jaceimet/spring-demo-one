@@ -20,9 +20,9 @@
     	class="com.luv2code.springdemo.RandomFortuneService">
     </bean>
     
-    <bean id="myCoach"
-    	class="com.luv2code.springdemo.TrackCoach"
-    	scope = "prototype">  
+    <bean id="myHockeyCoach"
+    	class="com.luv2code.springdemo.HockeyCoach"
+    	scope = "singleton">  
     	
     	<!-- set up constructor injection -->
 		<constructor-arg ref="myFortuneService" /> 

@@ -2,6 +2,17 @@ package com.luv2code.springdemo;
 
 public class HockeyCoach implements Coach {
 	
+	private FortuneService fortuneService;
+	
+	public HockeyCoach() {
+		
+	}
+	
+	public HockeyCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+	
+	
 	@Override
 	public String getDailyWorkout() {
 		return "Do 20 sprint drills";
@@ -9,8 +20,8 @@ public class HockeyCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return "Lets Begin: " + fortuneService.getFortune();
 	}
 
 }
